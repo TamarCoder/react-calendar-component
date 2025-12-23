@@ -37,7 +37,7 @@ const Calendar: React.FC<CalendarProps> = ({
   }, []);
 
   const formatDate = (date: Date | null) => {
-    if (!date) return "choose date";
+    if (!date) return "Choose Date";
     const day = date.getDate();
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
