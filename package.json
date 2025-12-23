@@ -1,0 +1,28 @@
+{
+  "name": "react-calendar-component",
+  "version": "1.0.0",
+  "description": "Customizable React Calendar Component with TypeScript support",
+  "main": "Calendar.tsx",
+  "author": "Tamar Khuskivadze",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "calendar",
+    "datepicker",
+    "date-picker",
+    "typescript",
+    "component",
+    "ui-component",
+    "react-component",
+    "date-selector"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tamarkhuskivadze/react-calendar-component.git"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-icons": "^4.0.0 || ^5.0.0"
+  }
+}
