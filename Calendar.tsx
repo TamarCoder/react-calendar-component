@@ -1,11 +1,8 @@
 "use client";
-import { get } from "http";
 import styles from "./Calendar.module.scss";
 import React, { useEffect, useRef, useState } from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { TiArrowLeftThick, TiArrowRightThick } from "react-icons/ti";
-import { date } from "yup";
-import { set } from "react-hook-form";
 
 const Calendar: React.FC<CalendarProps> = ({
   label,
