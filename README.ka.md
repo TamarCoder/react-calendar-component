@@ -516,3 +516,7 @@ MIT License - თავისუფლად გამოიყენეთ პ�
 ## 👨‍💻 ავტორი
 
 შექმნილია სასწავლო მიზნებისთვის - React State Management და Custom Components-ის სწავლების დემონსტრაციისთვის.
+
+---
+
+**[📖 Full Documentation (English)](./README.md)**
