@@ -7,9 +7,10 @@ import { TiArrowLeftThick, TiArrowRightThick } from "react-icons/ti";
 const Calendar: React.FC<CalendarProps> = ({
   label,
   initialDate,
-  minDate,
-  maxDate,
   onChange,
+  className,
+  style,
+  onDatechange,
 }) => {
   const [selectedDate, setSelectedDate] = useState<Date | null>(
     initialDate || null
@@ -151,10 +152,13 @@ const Calendar: React.FC<CalendarProps> = ({
     if (onChange) {
       onChange(selected);
     }
-  }
+    if (onDatechange) {
+      onDatechange(selected);
+    }
+  };
 
   return (
-    <div className={styles.calendar} ref={calendarRef}>
+    <div className={`${styles.calendar} ${className || ""}`} style={style} ref={calendarRef}>
       <label className={styles.label}>{label}</label>
 
       <div className={styles.calendarWrapper}>
@@ -170,13 +174,21 @@ const Calendar: React.FC<CalendarProps> = ({
         {isOpen && (
           <div className={styles.calendarPopup}>
             <div className={styles.header}>
-              <button type="button" className={styles.navButton} onClick={goToPreviousMonth}>
+              <button
+                type="button"
+                className={styles.navButton}
+                onClick={goToPreviousMonth}
+              >
                 <TiArrowLeftThick />
               </button>
               <span className={styles.monthYear}>
                 {getMonthName(currentMonth)} {currentMonth.getFullYear()}
               </span>
-              <button type="button" className={styles.navButton} onClick={goToNextMonth}>
+              <button
+                type="button"
+                className={styles.navButton}
+                onClick={goToNextMonth}
+              >
                 <TiArrowRightThick />
               </button>
             </div>
