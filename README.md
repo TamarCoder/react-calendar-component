@@ -88,6 +88,9 @@ import { Controller } from 'react-hook-form';
 | `minDate` | `Date` | No | Minimum allowed date (future feature) |
 | `maxDate` | `Date` | No | Maximum allowed date (future feature) |
 | `onChange` | `(date: Date) => void` | No | Callback function when date is selected |
+| `className` | `string` | No | Additional CSS class for the calendar container |
+| `style` | `React.CSSProperties` | No | Inline styles for the calendar container |
+| `onDatechange` | `(date: Date | null) => void` | No | Alternative callback when date changes |
 
 ---
 
